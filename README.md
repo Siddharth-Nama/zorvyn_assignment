@@ -1,12 +1,7 @@
-# Zorvyn Finance Backend
+# Finance Data Processing and Access Control Backend
 
-A professional-grade backend solution for financial data management with robust RBAC (Role-Based Access Control) and high-performance analytics.
+A production-grade financial management system with RBAC, Soft Deletes, and Service Layer architecture.
 
-## Tech Stack
-- **Framework**: Django + Django REST Framework (DRF)
-- **Database**: PostgreSQL
-- **Security**: JWT (SimpleJWT)
-- **Architecture**: Service Layer Pattern
+## Deployment & Setup
 
-## Quick Setup
-Setup instructions will be populated as the infrastructure is built.
+Instructions will follow in Phase 7.
