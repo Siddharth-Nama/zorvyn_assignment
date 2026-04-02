@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'finance',
     'dashboard',
     'common',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
