@@ -8,6 +8,7 @@ class SoftDeleteQuerySet(models.QuerySet):
         return super().delete()
 
     def alive(self):
+        # Only return records that have not been soft-deleted
         return self.filter(is_deleted=False)
 
     def deleted(self):
