@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "zorvyn-id",
+		"name": "Zorvyn Finance API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Get Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@example.com\",\n    \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/accounts/token/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"accounts",
+								"token",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Finance",
+			"item": [
+				{
+					"name": "List Transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/finance/transactions/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"finance",
+								"transactions",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
